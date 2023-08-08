@@ -1,0 +1,4 @@
+#!/bin/bash
+# This is a sample script
+echo "Hello there !"
+date
