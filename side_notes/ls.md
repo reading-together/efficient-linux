@@ -2,7 +2,7 @@
 
 ## 重定向会导致 ls 的行为改变
 
-ls 知道自己的标准输出屏幕还是被重定向了。原因是为了保证用户友好。
+`ls` 知道自己的标准输出屏幕还是被重定向了。原因是为了用户友好：
 
 当标准输出为屏幕时，ls 就会将输出排列成多列，以方便用户阅读:
 
@@ -22,7 +22,7 @@ bsd-csh dmesg  less    nisdomainname  rm    tempfile
 > 使用选项 `-C` 可以强制 ls 输出多列结果。
 
 ```bash
-$ ls /bin
+$ ls /bin | cat
 bash
 bsd-csh
 bunzip2
